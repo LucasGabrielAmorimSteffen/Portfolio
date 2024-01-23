@@ -102,5 +102,11 @@ p{
 
 .tech{
     width: 50px;
-    max-width: 100%;
+    max-width: auto;
+}
+
+.tecgr{
+    margin-right: 250px;
+    margin-left: 350px;
+    margin-top: 150px;
 }
