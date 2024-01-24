@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #27282d;
     color: aliceblue;
     font-family: Arial;
 }
@@ -28,6 +28,7 @@ h2{
 .header {
     position: sticky;
     top: 0;
+    background-color: #27282d;
 }
 
 .top-menu ul {
@@ -46,10 +47,10 @@ h2{
     text-decoration: underline;
     counter-reset: #ccc;
     font-size: 25px;
-
+    color: #571aad;
 }
 
-/*Foto-Perfil*/ 
+/*Imagens*/ 
 
 .foto-perfil {
     width: 400px; 
@@ -57,11 +58,10 @@ h2{
     border-radius: 50%; 
     overflow: hidden;  
     border: 4px solid #fff; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 250px;
+    margin-left: 150px;
   }
   
   .foto-perfil img {
@@ -91,22 +91,38 @@ article{
 .coluna-direita{
     width: 60vw;
 }
-/*Formatações de texto*/
 
-p{
-    margin-right: 250px;
-    font-family: Arial;
-    font-size: 35px;
+.borderaboreder{
+    justify-content: justify;
+    align-items: justify;
     text-align: justify;
 }
 
+/*Formatação das tecnologias*/
 .tech{
     width: 50px;
     max-width: auto;
+    margin-left: 8px;
 }
 
 .tecgr{
-    margin-right: 250px;
-    margin-left: 350px;
-    margin-top: 150px;
+    margin-left: 225px;
+    margin-top: 35px;
+}
+
+
+/*Formatação de parágrafos*/
+
+p{
+    margin-right: 200px;
+    text-align: left;
+    font-family: Arial;
+    font-size: 35px;
+}
+
+.technology{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 1220px;
 }
