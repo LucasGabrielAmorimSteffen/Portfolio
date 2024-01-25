@@ -47,6 +47,11 @@ h2{
 
 /*Imagens*/ 
 
+.teste{
+    width: px;
+    height: 750px;
+}
+
 .foto-perfil {
     width: 400px; 
     height: 400px;
@@ -87,12 +92,6 @@ article{
     width: 60vw;
 }
 
-.borderaboreder{
-    justify-content: justify;
-    align-items: justify;
-    text-align: justify;
-}
-
 /*Formatação das tecnologias*/
 .tech{
     width: 50px;
@@ -124,6 +123,7 @@ p{
 
 .title{
     font-size: 25px;
+    margin-top: 110px;
 }
 
 .subt{
@@ -138,6 +138,34 @@ p{
     margin-top: 25px;
 }
 
-.templ01{
-    margin-left: 50px;   
+/*Formatação de imagens com legenda*/
+
+figure.foto-legenda{
+    position: relative;
+    box-shadow: 1px 1px 4px black;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0,0,.4);
+    font-size: 33px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
 }
