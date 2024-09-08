@@ -1,190 +1,164 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* Estilos gerais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0c0f14;
+            color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-body {
-    background-color: #27282d;
-    color: aliceblue;
-    font-family: Arial;
-}
+        /* Container principal */
+        .container {
+            background-color: #1a1d23;
+            width: 950px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid #00a4ef;
+            color: #e0e0e0;
+        }
 
-h1 {
-    text-align: center;
-}
+        /* Cabeçalho com imagem de perfil e informações */
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
 
-h2{
-    text-align: center;
-}
+        /* Imagem de perfil */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #00a4ef;
+        }
 
-/*Menu*/
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.header {
-    position: sticky;
-    top: 0;
-    background-color: #27282d;
-}
+        /* Informações do perfil */
+        .info {
+            flex: 1;
+        }
 
-.top-menu ul {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-}
+        .info h1 {
+            font-size: 2.8rem;
+            color: #00a4ef;
+            margin: 0;
+        }
 
-.top-menu ul > li {
-    list-style-type: none;
-    margin: 8px;
-}
+        .info p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+            margin: 5px 0;
+        }
 
-.top-menu ul>li a {
-    text-decoration: none;
-    counter-reset: #ccc;
-    font-size: 25px;
-    color: #571aad;
-}
+        .info .future {
+            font-size: 1.1rem;
+            color: #00a4ef;
+        }
 
-/*Imagens*/ 
+        /* Seção de bio e objetivos */
+        .bio {
+            margin-top: 20px;
+        }
 
-.foto-perfil {
-    width: 400px; 
-    height: 400px;
-    border-radius: 50%; 
-    overflow: hidden;  
-    border: 4px solid #fff; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 250px;
-  }
-  
-  .foto-perfil img {
-    width: 100%; 
-    height: auto; 
-    display: block;
-}
+        .bio p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
 
-/*Posts (páginas)*/
+        .bio p span {
+            font-size: 1.3rem;
+            color: #00a4ef;
+        }
 
-article{
-    margin-top: 36px;
-}
+        /* Seção de habilidades e inovação */
+        .skills {
+            margin-top: 40px;
+        }
 
-.bloco{
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    margin-top: 36px;
-    margin-bottom: 36px;
-}
+        .skills h2 {
+            font-size: 1.8rem;
+            color: #00a4ef;
+            margin-bottom: 20px;
+        }
 
-.coluna-esquerda{
-    width: 30vw;
-}
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
 
-.coluna-direita{
-    width: 60vw;
-}
+        .tech-grid img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            filter:  brightness(1.2);
+        }
 
-/*Formatação das tecnologias*/
-.tech{
-    width: 50px;
-    max-width: auto;
-    margin-left: 8px;
-}
+        /* Projetos visionários */
+        .projects {
+            margin-top: 50px;
+        }
 
-.tecgr{
-    margin-left: 330px;
-    margin-top: 35px;
-}
+        .projects h2 {
+            font-size: 1.8rem;
+            color: #00a4ef;
+            margin-bottom: 20px;
+        }
 
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
 
-/*Formatação de parágrafos*/
+        .card {
+            border-radius: 10px;
+            background-color: #292d35;
+            border: 1px solid #00a4ef;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            display: flex;
+            flex-direction: column;
+        }
 
-p.aboutme{
-    margin-right: 100px;
-    font-size: 40px;
-    text-align: justify;
-}
+        .card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-.technology{
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 1020px;
-}
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 1px solid #00a4ef;
+        }
 
-.title{
-    font-size: 25px;
-    margin-top: 110px;
-}
+        .card-content {
+            padding: 20px;
+            color: #e0e0e0;
+        }
 
-.subt{
-    margin-top: 50px;
-    margin-right: 900px;
-    margin-left: 550px;
-}
+        .card-content p {
+            margin: 0;
+        }
 
-.text01 {
-    margin-left: 750px;
-    margin-right: 500px;
-    margin-top: 25px;
-}
-
-/*Cards*/
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-}
-
-.card{
-    width: 325px;
-    background-color: #27282d;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
-}
-
-.card img{
-    width: 100%;
-    height: auto;
-}
-
-.card-content h3{
-    font-size: 28px;
-    margin-bottom: 8px;
-}
-
-.card-content p{
-    color: white;
-    font-size: 15px;
-    line-height: 1.3;
-}
-
-.card-content .btn{
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #571aad;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 16px;
-    color: white;
-}
-
-/*Section*/
-
-section.project{
-    display: flex;
-    align-items: center;
-    margin-left: 600px;
-}
-
-h1.project2{
-    text-align: center;
-    font-size: 33px;
-}
+        .card-content .visionary {
+            color: #00a4ef;
+        }
