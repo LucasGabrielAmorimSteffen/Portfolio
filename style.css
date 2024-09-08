@@ -162,3 +162,8 @@
         .card-content .visionary {
             color: #00a4ef;
         }
+
+        .card:hover {
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.7);
+            transform: scale(1.05);
+        }
