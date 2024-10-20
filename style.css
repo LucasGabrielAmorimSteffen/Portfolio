@@ -302,3 +302,22 @@
     }
 }
 
+a:link {
+    color: #b0b0b0;
+    text-decoration: none;
+ }
+ 
+ /* link que foi visitado */
+ a:visited {
+    color: #b0b0b0;
+ }
+ 
+ /* mouse over */
+ a:hover {
+     color: #00a4ef;
+ }
+ 
+ /* link selecionado */
+ a:active {
+     color: #b0b0b0;
+ }
